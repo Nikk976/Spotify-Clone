@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 body{
     background-color: antiquewhite;
 }
@@ -8,115 +9,104 @@ body{
     margin: 0;
     padding: 0;
 }
-
 nav{
     font-family: 'Ubuntu', sans-serif;
 }
-
 nav ul{
     display: flex;
-    align-items: center;
     list-style-type: none;
-    height: 40px;
+    height:40px;
     background-color: black;
-    color: white;
+    color:white;
+    align-items: center;
 }
 
-nav ul li{
-    padding: 0 12px;
-}
 .brand img{
-    width: 29px;
-    padding: 0 8px;
+    width:29px;
+    padding: 0px 8px;
 }
 
-.brand {
+nav ul li {
+    padding: 0px 10px;
+}
+
+.brand{
     display: flex;
     align-items: center;
     font-weight: bolder;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .container{
-    min-height: 72vh;
+
+    min-height: 70vh;
     background-color: black;
-    color: white;
-   font-family: 'Varela Round', sans-serif;
-   display: flex;
-   margin: 23px auto;
-   width: 70%;
-   border-radius: 12px;
-   padding: 34px;
+    color:white;
+    width: 75%;
+    margin: 15px auto;
+    border-radius: 10px;
+    padding:12px;
+    font-family: 'Varela Round', sans-serif;
    background-image: url('bg.jpg');
+   background-size: 800px;
+   
+   background-repeat: no-repeat;
+   background-position: right;
+    
+    
+
 }
 
 .bottom{
-    position: sticky;
-    bottom: 0;
-    height: 100px;
-    background-color: black;
-    color: white;
     display: flex;
+    position: sticky;
+    height: 90px;
+    background-color: black;
+    bottom: 0px;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    color: white;
+    flex-direction: column;
 }
-
 .icons{
-    margin-top: 14px; 
+    margin:8px 0px;
 }
-.icons i{
+.icons i {
     cursor: pointer;
 }
-
 #myProgressBar{
-    width: 80vw; 
+    width: 75vw;
     cursor: pointer;
-}
-
-.songItemContainer{
-    margin-top: 74px;
 }
 
 .songItem{
-    height: 50px;
-    display: flex;
-    background-color: white;
-    
-    color: black;
-    margin: 12px 0;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 34px;
+ height: 35px;
+ background-color: white;
+ width: 40%;
+ color:black;
+ margin: 10px 0;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ border-radius: 24px;
 }
-
 .songItem img{
-    width: 43px;
-    margin: 0 23px;
-    border-radius: 34px;
+    height: 35px;
+    margin:23px 0;
+    border-radius: 14px;
 }
-
-.timestamp{
-    margin: 0 23px;
-}
-
 .timestamp i{
     cursor: pointer;
 }
-
+.songitemcontainer{
+    margin: 20px;
+}
 .songInfo{
     position: absolute;
-    left: 10vw;
+    left: 12vw;
     font-family: 'Varela Round', sans-serif;
 }
-
 .songInfo img{
     opacity: 0;
-    transition: opacity 0.4s ease-in;
+    transition: 1s ease-in;
 }
-
-@media only screen and (max-width: 1100px) {
-    body {
-      background-color: red;
-    }
-  }
